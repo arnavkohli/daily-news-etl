@@ -10,14 +10,11 @@ CLUSTERS = {
 # vectorizer = Vectorizer()
 
 def get_average_cos_dist(sentence, ls):
-	# vectorizer.bert([sentence] + ls)
-	# vectors_bert = vectorizer.vectors
 	avg = 0
 	count = 0
 	X_list = word_tokenize(sentence) 
 
 	for index, other in enumerate(ls):
-		# cos_dist = spatial.distance.cosine(vectors_bert[0], vectors_bert[index])
 		# tokenization
 		Y_list = word_tokenize(other)
 		  
